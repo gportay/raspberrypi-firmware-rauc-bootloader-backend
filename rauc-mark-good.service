@@ -1,0 +1,19 @@
+#  SPDX-License-Identifier: LGPL-2.1-or-later
+#
+#  This file is part of raspberrypi-firmware-rauc-bootloader-backend.
+#
+#  raspberrypi-firmware-rauc-bootloader-backend is free software; you can
+#  redistribute it and/or modify it under the terms of the GNU Lesser
+#  General Public License as published by the Free Software Foundation;
+#  version 2.1 of the License.
+
+[Unit]
+Description=RAUC Good-marking Service
+Documentation=https://rauc.readthedocs.io/en/latest/integration.html#systemd-integration
+After=local-fs.target
+
+[Service]
+ExecStart=/usr/bin/rauc status mark-good
+
+[Install]
+WantedBy=multi-user.target
