@@ -194,6 +194,13 @@ Or
 
 	$ make install DESTDIR=$PWD/pkg PREFIX=/usr
 
+## EMBEDDED BUILD SYSTEMS
+
+The RAUC custom bootloader [backend] for the Raspberry Pi firmware is neither a
+part of [Raspberry Pi OS] nor [Buildroot] nor [OpenEmbedded].
+
+However, a [Buildroot package] is available in the `support` directory.
+
 ## BUGS
 
 Report bugs at *https://github.com/gportay/raspberrypi-firmware-rauc-bootloader-backend/issues*
@@ -213,7 +220,11 @@ later version.
 
 [Barebox]: https://rauc.readthedocs.io/en/latest/integration.html#barebox
 [Bourne Again shell]: https://www.gnu.org/software/bash/
+[Buildroot package]: support/raspberrypi-firmware-systemd-generator.mk
+[Buildroot]: https://buildroot.org/
 [EFI]: https://rauc.readthedocs.io/en/latest/integration.html#efi
+[OpenEmbedded]: http://www.openembedded.org/
+[Raspberry Pi OS]: https://www.raspberrypi.com/software/
 [Raspberry Pi hardwares]: https://www.raspberrypi.com/products/
 [U-Boot]: https://rauc.readthedocs.io/en/latest/integration.html#id5
 [autoboot.txt]: https://www.raspberrypi.com/documentation/computers/config_txt.html#autoboot-txt
