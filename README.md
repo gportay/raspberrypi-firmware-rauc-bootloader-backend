@@ -199,7 +199,8 @@ Or
 The RAUC custom bootloader [backend] for the Raspberry Pi firmware is neither a
 part of [Raspberry Pi OS] nor [Buildroot] nor [OpenEmbedded].
 
-However, a [Buildroot package] is available in the `support` directory.
+However, a [Buildroot package] and a [Bitbake recipe] are available in the
+`support` the `support` directory.
 
 ## BUGS
 
@@ -219,6 +220,7 @@ Software Foundation, either version 2.1 of the License, or (at your option) any
 later version.
 
 [Barebox]: https://rauc.readthedocs.io/en/latest/integration.html#barebox
+[Bitbake recipe]: support/raspberrypi-firmware-systemd-generator_git.bb
 [Bourne Again shell]: https://www.gnu.org/software/bash/
 [Buildroot package]: support/raspberrypi-firmware-systemd-generator.mk
 [Buildroot]: https://buildroot.org/
