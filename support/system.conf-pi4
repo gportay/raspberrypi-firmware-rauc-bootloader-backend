@@ -1,0 +1,37 @@
+# https://rauc.readthedocs.io/en/latest/reference.html#system-section
+[system]
+compatible=raspberrypi,4-model-b
+bootloader=custom
+data-directory=/boot/rauc
+
+# https://rauc.readthedocs.io/en/latest/reference.html#keyring-section
+[keyring]
+path=/etc/rauc/keyring.pem
+
+# https://rauc.readthedocs.io/en/latest/using.html#system-based-customization-handlers
+[handlers]
+# https://rauc.readthedocs.io/en/latest/reference.html#handlers-section
+system-info=/usr/lib/raspberrypi-firmware-rauc-bootloader-backend/system-info
+# https://rauc.readthedocs.io/en/latest/integration.html#custom
+bootloader-custom-backend=/usr/lib/raspberrypi-firmware-rauc-bootloader-backend/bootloader-custom-backend
+
+# https://rauc.readthedocs.io/en/latest/reference.html#slot-slot-class-idx-sections
+[slot.firmware.0]
+device=/dev/mmcblk0p2
+type=vfat
+parent=rootfs.0
+
+[slot.firmware.1]
+device=/dev/mmcblk0p3
+type=vfat
+parent=rootfs.1
+
+[slot.rootfs.0]
+device=/dev/mmcblk0p5
+type=ext4
+bootname=ROOTFS-A
+
+[slot.rootfs.1]
+device=/dev/mmcblk0p6
+type=ext4
+bootname=ROOTFS-B
