@@ -179,6 +179,32 @@ filesystem as well.
 
 The native bootchooser implementation in the RAUC tree is on its way.
 
+## EXAMPLE
+
+The three files [system.conf-pi4], [autoboot.txt-a] and [hooks.bash] in the
+directory `support` provide an example of a RAUC Raspberry Pi 4 Model B.
+
+	install -D -m0644 support/system.conf-pi4 /etc/rauc/system.conf
+	install -D -m0644 support/autoboot.txt-a /boot/autoboot.txt
+
+_Note_: Set the following lines to the RAUC manifest file to enable for kernel
+updates, and create the bundle then:
+
+	[update]
+	compatible=raspberrypi,4-model-b
+	# (...)
+	
+	[hooks]
+	filename=support/hook.bash
+	
+	[image.rootfs]
+	# (...)
+	hooks=pre-install
+	
+	[image.firmware]
+	# (...)
+	hooks=post-install
+
 ## INSTALL
 
 Run the following command to install *bootloader-custom-backend(1)*,
@@ -229,6 +255,7 @@ later version.
 [Raspberry Pi OS]: https://www.raspberrypi.com/software/
 [Raspberry Pi hardwares]: https://www.raspberrypi.com/products/
 [U-Boot]: https://rauc.readthedocs.io/en/latest/integration.html#id5
+[autoboot.txt-a]: support/autoboot.txt-a
 [autoboot.txt]: https://www.raspberrypi.com/documentation/computers/config_txt.html#autoboot-txt
 [backend]: bootloader-custom-backend
 [bash(1)]: https://linux.die.net/man/1/bash
@@ -239,12 +266,14 @@ later version.
 [fdtget]: https://git.kernel.org/pub/scm/utils/dtc/dtc.git/tree/fdtget.c
 [fstab(5)]: https://linux.die.net/man/5/fstab
 [handlers]: https://rauc.readthedocs.io/en/latest/using.html#system-based-customization-handlers
+[hook.bash]: support/hook.bash
 [hook]: https://rauc.readthedocs.io/en/latest/using.html#bundle-based-customization-hooks
 [linux]: https://github.com/raspberrypi/linux/commit/777a6a08bcf8f5f0a0086358dc66d8918a0e1c57#diff-1c6051b88ea21684666367f31afc5452e51abc9fe5f340281cd9d38459ac3d35R224-R225
 [mailbox property interface]: https://github.com/raspberrypi/firmware/wiki/Mailbox-property-interface
 [raspberrypi firmware driver]: https://github.com/raspberrypi/linux/blob/rpi-6.6.y/drivers/firmware/raspberrypi.c
 [reboot(2)]: https://linux.die.net/man/2/reboot
 [reboot]: https://www.freedesktop.org/software/systemd/man/latest/systemctl.html#reboot
+[system.conf-pi4]: support/system.conf
 [system.conf]: https://rauc.readthedocs.io/en/latest/reference.html#sec-ref-slot-config
 [tryboot]: https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#fail-safe-os-updates-tryboot
 [vcmailbox]: https://github.com/raspberrypi/utils/blob/master/vcmailbox/vcmailbox.c
