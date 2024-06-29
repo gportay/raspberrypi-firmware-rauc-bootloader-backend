@@ -245,6 +245,10 @@ the terms of the GNU Lesser General Public License as published by the Free
 Software Foundation, either version 2.1 of the License, or (at your option) any
 later version.
 
+## SEE ALSO
+
+[bash(1)], [fdtget], [vcmailbox(1)]
+
 [Barebox]: https://rauc.readthedocs.io/en/latest/integration.html#barebox
 [Bitbake recipe]: support/raspberrypi-firmware-systemd-generator_git.bb
 [Bourne Again shell]: https://www.gnu.org/software/bash/
@@ -263,6 +267,7 @@ later version.
 [change]: https://github.com/Rtone/rtone-br2-external/commit/9ba8d9b3df9584e50cf5ae6952af54417a86b3f3
 [commit]: https://github.com/raspberrypi/linux/commit/777a6a08bcf8f5f0a0086358dc66d8918a0e1c57#diff-1c6051b88ea21684666367f31afc5452e51abc9fe5f340281cd9d38459ac3d35R224-R225
 [custom]: https://rauc.readthedocs.io/en/latest/integration.html#custom
+[fdtget(1)]: https://linux.die.net/man/1/fdtget
 [fdtget]: https://git.kernel.org/pub/scm/utils/dtc/dtc.git/tree/fdtget.c
 [fstab(5)]: https://linux.die.net/man/5/fstab
 [handlers]: https://rauc.readthedocs.io/en/latest/using.html#system-based-customization-handlers
@@ -276,4 +281,5 @@ later version.
 [system.conf-pi4]: support/system.conf
 [system.conf]: https://rauc.readthedocs.io/en/latest/reference.html#sec-ref-slot-config
 [tryboot]: https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#fail-safe-os-updates-tryboot
+[vcmailbox(1)]: https://linux.die.net/man/1/vcmailbox
 [vcmailbox]: https://github.com/raspberrypi/utils/blob/master/vcmailbox/vcmailbox.c
