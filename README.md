@@ -228,6 +228,10 @@ part of [Raspberry Pi OS] nor [Buildroot] nor [OpenEmbedded].
 However, a [Buildroot package] and a [Bitbake recipe] are available in the
 `support` the `support` directory.
 
+## PATCHES
+
+Sumbit patches at *https://github.com/gportay/raspberrypi-firmware-rauc-bootloader-backend/pulls*
+
 ## BUGS
 
 Report bugs at *https://github.com/gportay/raspberrypi-firmware-rauc-bootloader-backend/issues*
