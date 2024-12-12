@@ -78,11 +78,11 @@ the location of the custom bootloader backend in the section `handlers`.
 
 For example; if the backend is at `/usr/lib/rauc/backend/raspberrypi-firmware`:
 
-	[system]                                                                        
+	[system]
 	# (...)
-	bootloader=custom                                                               
+	bootloader=custom
 	
-	[handlers]                                                                      
+	[handlers]
 	# (...)
 	bootloader-custom-backend=/usr/lib/rauc/backend/raspberrypi-firmware
 
