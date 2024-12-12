@@ -55,7 +55,7 @@ to the [broadcom vcio driver] instead.
 _Note_: The tag **Set Reboot Flags** is undocumented; The [commit] in the linux
 kernel tree reveals it as:
 
----
+```
 #### Set reboot flags
 
  * Tag: 0x00030064
@@ -66,7 +66,7 @@ kernel tree reveals it as:
  * Response:
    * Length: 0
    * Value:
----
+```
 
 ## CONFIGURATION FILES
 
