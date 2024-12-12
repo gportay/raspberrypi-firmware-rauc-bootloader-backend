@@ -293,6 +293,8 @@ set_primary_persistent() {
 # synced with its modules in the root partition.
 #
 get_state() {
+	local partition
+	local tryboot
 	local slot
 
 	if ! partition="$(fdtget /sys/firmware/fdt /chosen/bootloader partition)"
