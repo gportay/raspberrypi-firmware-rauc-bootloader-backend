@@ -116,7 +116,7 @@ device_partition() {
 	cat "/sys/class/block/${dev##*/}/partition"
 }
 
-# Output the bootname's slot of the given boot partition number using the RAUC
+# Output the bootname's slot of the given boot_partition number using the RAUC
 # system.conf file.
 #
 # Examples:
