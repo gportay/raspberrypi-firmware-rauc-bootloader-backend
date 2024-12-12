@@ -30,6 +30,8 @@ It implements the four mandatory actions:
  - get the boot state
  - set the boot state
 
+And it implements the optional action: get the current booted slot.
+
 _Note_: The custom bootloader backend APIs for the Raspberry Pi firmware are
 self-documented in the shell [backend] script.
 

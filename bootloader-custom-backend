@@ -454,6 +454,27 @@ set_primary() {
 	fi
 }
 
+# Output the bootname's slot of the partition number set by the bootloader in
+# the fdt using the RAUC system.conf file.
+get_current() {
+	local partition
+	local slot
+
+	if ! partition="$(fdtget /sys/firmware/fdt /chosen/bootloader partition)"
+	then
+		error "partition: Cannot get boot partition"
+		return 1
+	fi
+
+	if ! slot="$(get_slot "$partition")"
+	then
+		error "Cannot get booted slot"
+		return 1
+	fi
+
+	echo "$slot"
+}
+
 if [ "$1" = "get-state" ]
 then
 	shift
