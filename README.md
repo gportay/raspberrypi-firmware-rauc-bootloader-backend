@@ -224,11 +224,8 @@ Or
 
 ## EMBEDDED BUILD SYSTEMS
 
-The RAUC custom bootloader [backend] for the Raspberry Pi firmware is neither a
-part of [Raspberry Pi OS] nor [Buildroot].
-
-However, a [Buildroot package] is available in the `support` directory and a
-[Bitbake recipe] is available in the layer [meta-downstream].
+A [Buildroot package] is available in the br2-external [rtone-br2-external] and
+a [Bitbake recipe] is available in the layer [meta-downstream].
 
 ## PATCHES
 
@@ -258,10 +255,8 @@ later version.
 [Barebox]: https://rauc.readthedocs.io/en/latest/integration.html#barebox
 [Bitbake recipe]: https://github.com/gportay/meta-downstream/blob/master/meta-rauc-raspberrypi-firmware/recipes-bsp/raspberrypi-firmware-rauc-bootloader-backend/raspberrypi-firmware-rauc-bootloader-backend_git.bb
 [Bourne Again shell]: https://www.gnu.org/software/bash/
-[Buildroot package]: support/raspberrypi-firmware-systemd-generator.mk
-[Buildroot]: https://buildroot.org/
+[Buildroot package]: https://github.com/Rtone/rtone-br2-external/tree/main/package/raspberrypi-firmware-systemd-generator
 [EFI]: https://rauc.readthedocs.io/en/latest/integration.html#efi
-[Raspberry Pi OS]: https://www.raspberrypi.com/software/
 [Raspberry Pi hardwares]: https://www.raspberrypi.com/products/
 [U-Boot]: https://rauc.readthedocs.io/en/latest/integration.html#id5
 [autoboot.txt-a]: support/autoboot.txt-a
