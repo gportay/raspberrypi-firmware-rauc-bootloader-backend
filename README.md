@@ -228,7 +228,7 @@ The RAUC custom bootloader [backend] for the Raspberry Pi firmware is neither a
 part of [Raspberry Pi OS] nor [Buildroot] nor [OpenEmbedded].
 
 However, a [Buildroot package] and a [Bitbake recipe] are available in the
-`support` the `support` directory.
+`support` directory.
 
 ## PATCHES
 
