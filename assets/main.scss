@@ -1,0 +1,94 @@
+---
+---
+
+$primary-color:     #c23450;
+$secondary-color:   #24485d;
+$green-color:       #53baaa;
+$orange-color:      #ff6d02;
+$pink-color:        #f06880;
+$yellow-color:      #ffbd4b;
+$lightgreen-color:  #d8f9f3;
+$lightorange-color: #f4e2c4;
+$lightpink-color:   #f7d1d7;
+$lightyellow-color: #fff0d6;
+
+$base-font-family: "Raleway";
+
+@import "minima";
+
+@font-face {
+  font-family: "Raleway";
+  src: url("/assets/fonts/Raleway/Raleway-VariableFont_wght.ttf");
+}
+
+h1 {
+  font-weight: bold;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+h5 {
+  font-weight: bold;
+}
+
+h6 {
+  font-weight: bold;
+}
+
+#description, #kernel-updates, #embedded-build-systems, #copyright {
+  color: $green-color;
+  background-color: $lightgreen-color;
+}
+
+#tryboot, #native-bootchooser-implementation, #patches, #see-also {
+  color: $orange-color;
+  background-color: $lightorange-color;
+}
+
+#configuration-files, #example, #bugs {
+  color: $pink-color;
+  background-color: $lightpink-color;
+}
+
+#systemconf, #autoboottxt, #important {
+  color: $pink-color;
+};
+
+#requirements, #install, #author {
+  color: $yellow-color;
+  background-color: $lightyellow-color;
+}
+
+#bash, #fdtget, #vcmailbox, #vcio-driver {
+  color: $yellow-color;
+};
+
+pre, code {                                                                          
+  background: #f3f3f3;
+}
+
+a {
+  color: darken($text-color, 15%);
+
+  &:visited {
+    color: darken($text-color, 30%);
+  }
+}
+
+.highlight {
+  background: #f3f3f3;
+
+  .highlighter-rouge & {
+    background: #f3f3f3;
+  }
+}
