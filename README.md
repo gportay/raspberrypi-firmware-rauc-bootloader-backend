@@ -229,19 +229,21 @@ a [Bitbake recipe] is available in the layer [meta-downstream].
 
 ## PATCHES
 
-Sumbit patches at <https://github.com/gportay/raspberrypi-firmware-rauc-bootloader-backend/pulls>
+Sumbit patches at <https://github.com/Rtone/raspberrypi-firmware-rauc-bootloader-backend/pulls>
 
 ## BUGS
 
-Report bugs at <https://github.com/gportay/raspberrypi-firmware-rauc-bootloader-backend/issues>
+Report bugs at <https://github.com/Rtone/raspberrypi-firmware-rauc-bootloader-backend/issues>
 
 ## AUTHOR
 
-Written by Gaël PORTAY *gael.portay@gmail.com*
+Written by Gaël PORTAY *gael.portay@rtone.fr*
 
 ## COPYRIGHT
 
 Copyright 2024 Gaël PORTAY
+
+Copyright 2024 Rtone
 
 This program is free software: you can redistribute it and/or modify it under
 the terms of the GNU Lesser General Public License as published by the Free
